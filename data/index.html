@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1"
+  />
+  <title>SecretChat 8266</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SecretChat_8266</h1>
+      <div class="status">
+        <span id="ap">AP: SecretChat_8266</span>
+        <span id="state" class="pill">connecting…</span>
+      </div>
+    </header>
+
+    <section class="join">
+      <label for="name">Nickname</label>
+      <input id="name" type="text" placeholder="Your name" maxlength="20" />
+      <button id="joinBtn" class="btn">Join</button>
+    </section>
+
+    <section class="chat hidden" id="chatSection">
+      <div id="msgs" class="msgs"></div>
+      <div class="composer">
+        <input id="msg" type="text" placeholder="Type a message…" maxlength="240" />
+        <button id="send" class="btn">Send</button>
+      </div>
+    </section>
+
+    <footer>
+      <small>Running locally on ESP8266 • No Internet required</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
